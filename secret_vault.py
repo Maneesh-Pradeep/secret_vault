@@ -63,10 +63,12 @@ class secret_vault:
 	def get_files(self):
 		self.files = os.listdir(self.hid_dir)
 
-	def set_hid_dir(self, path):
-		self.hid_dir = path + '/'
+	def set_hid_dir(self):
+		path = '~/.vault'
+		hid_path = os.path.expanduser(path)
+		self.hid_dir = hid_path + '/'
 
-if __name__ == '__main__':
+def main():
 	print("Welcome to the secret vault!!!")
 	path = os.path.expanduser('~/.vaultcfg')
 	if os.path.exists(path):
@@ -90,17 +92,14 @@ if __name__ == '__main__':
 		enc_mpwd = fernet.encrypt(masterpwd.encode())
 		with open(path, 'wb') as f:
 			f.write(enc_mpwd)
-		path = '~/.vault'
-		hid_path = os.path.expanduser(path)
+		vault.set_hid_dir()
 		try:
-			os.makedirs(hid_path)
+			os.makedirs(self.hid_path)
 		except FileExistsError:
 			pass
 		print("Welcome")
 
-	path = '~/.vault'
-	hid_path = os.path.expanduser(path)
-	vault.set_hid_dir(hid_path)
+	vault.set_hid_dir()
 
 	choice = 0
 	while choice != 4:
@@ -182,3 +181,7 @@ if __name__ == '__main__':
 					break
 				else:
 					print("Type Y or N")
+
+
+if __name__ == '__main__':
+	main()
