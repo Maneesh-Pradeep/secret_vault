@@ -8,7 +8,7 @@ except(IOError, ImportError):
 
 setup(
     name='secret_vault',
-    version='1.0.2',
+    version='1.0.4',
     description='Python secret vault',
     long_description=long_description,
     long_description_content_type="text/markdown",
