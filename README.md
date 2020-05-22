@@ -26,9 +26,8 @@ or by cloning this repo :
 ```
 git clone https://github.com/Manoj-Shan/secret_vault.git
 cd secret_vault
-```
-and running the **setup.py** file
-```
+
+# Run the setup.py file
 python setup.py install
 ```
 
