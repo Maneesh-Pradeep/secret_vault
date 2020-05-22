@@ -92,9 +92,9 @@ def main():
 		enc_mpwd = fernet.encrypt(masterpwd.encode())
 		with open(path, 'wb') as f:
 			f.write(enc_mpwd)
-		vault.set_hid_dir()
+			vault.set_hid_dir()
 		try:
-			os.makedirs(self.hid_path)
+			os.makedirs(vault.hid_dir[:-1])
 		except FileExistsError:
 			pass
 		print("Welcome")
