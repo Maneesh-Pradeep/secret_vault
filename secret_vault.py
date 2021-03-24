@@ -3,6 +3,7 @@ import os
 import base64
 import shutil
 import pyAesCrypt
+from subprocess import call
 from getpass import getpass
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
@@ -97,6 +98,11 @@ def main():
 			os.makedirs(vault.hid_dir[:-1])
 		except FileExistsError:
 			pass
+
+		if os.name == 'nt':
+			call(["attrib", "+H", vault.hid_dir[:-1]])
+			call(["attrib", "+H", path])
+
 		print("Welcome")
 
 	vault.set_hid_dir()
@@ -166,16 +172,15 @@ def main():
 						try:
 							resetFernet.decrypt(actual_mpwd)
 							print('Removing and resetting all data...')
-							path = os.path.expanduser('~/.vaultcfg')
-							os.remove(path)
-							shutil.rmtree(vault.hid_dir[:-1])
-							print('\nReset done. Thank You')
-							exit()
 						except Exception as e:
 							print(e)
 							print("\nWrong Master Password!")
 							print("Closing program now...")
 							exit()
+					os.remove(path)
+					shutil.rmtree(vault.hid_dir[:-1])
+					print('\nReset done. Thank You')
+					exit()
 				elif confirm == 'n' or confirm == 'N':
 					print("\nHappy for that")
 					break
