@@ -8,10 +8,9 @@ except(IOError, ImportError):
 
 setup(
     name='secret_vault',
-    version='1.0.4',
-    description='Python secret vault',
+    version='1.0.6',
+    description='Python secret vault to encrypt and hide your files in a secure place.',
     long_description=long_description,
-    long_description_content_type="text/markdown",
     author='Maneesh Pradeep',
     author_email='manojshan2002@gmail.com',
     url='https://github.com/Manoj-Shan/secret_vault',
@@ -27,8 +26,7 @@ setup(
         'Topic :: Security',
         'Topic :: Security :: Cryptography',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: MacOS',
-        'Operating System :: POSIX :: Linux',
+        'Operating System :: OS Independent',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python',
