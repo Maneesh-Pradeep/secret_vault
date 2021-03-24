@@ -11,6 +11,7 @@ setup(
     version='1.1',
     description='Python secret vault to encrypt and hide your files in a secure place.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Maneesh Pradeep',
     author_email='manojshan2002@gmail.com',
     url='https://github.com/Manoj-Shan/secret_vault',
