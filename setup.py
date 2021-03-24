@@ -8,7 +8,7 @@ except(IOError, ImportError):
 
 setup(
     name='secret_vault',
-    version='1.0.6',
+    version='1.1',
     description='Python secret vault to encrypt and hide your files in a secure place.',
     long_description=long_description,
     author='Maneesh Pradeep',
