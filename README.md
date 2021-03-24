@@ -14,7 +14,8 @@ A secret file storage vault in python for MacOS and Linux systems.
 ## Basic Usage
 Here's a simple gif to show you basics of how to use the vault
 
-![Unable to load Gif](https://i.imgur.com/w0YRsDb.gif)
+
+![](https://i.imgur.com/w0YRsDb.gif)
 
 ## Installation
 You can install the package using **pip command**
@@ -37,6 +38,6 @@ You can just type the **secret_vault** command from anywhere in the terminal to 
 The first time when you open the program, you are asked to Create a Master Password.
 That Master Password is used to identify you and also encrypt your files.
 
-You will asked to enter your Master Password every time you open the vault.
+You will be asked to enter your Master Password every time you open the vault.
 
 You can reset the master password by running the **Delete and Reset Vault** command in the program.
