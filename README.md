@@ -1,5 +1,5 @@
 # Secret Vault
-A secret file storage vault in python for MacOS and Linux systems.
+A secret file storage vault in python with AES encryption support. 
 
 ## Features
 * Store and encrypt your files in an hidden directory somewhere in your PC.
