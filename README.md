@@ -1,6 +1,8 @@
 # Secret Vault
 A secret file storage vault in python with AES encryption support. 
 
+[![Support me!](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maneeshpradeep)
+
 ## Features
 * Store and encrypt your files in an hidden directory somewhere in your PC.
 * The freedom to choose whether or not to **encrypt** your files before hiding them.
