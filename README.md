@@ -27,7 +27,7 @@ pip install secret-vault
 
 or by cloning this repo : 
 ```
-git clone https://github.com/Manoj-Shan/secret_vault.git
+git clone https://github.com/Maneesh-Pradeep/secret_vault.git
 cd secret_vault
 
 # Run the setup.py file
