@@ -1,5 +1,6 @@
-# Secret Vault
+# Secret Vault [![Downloads](https://static.pepy.tech/personalized-badge/secret-vault?period=total&units=international_system&left_color=black&right_color=orange&left_text=Total-Downloads)](https://pepy.tech/project/secret-vault) [![Downloads](https://static.pepy.tech/personalized-badge/secret-vault?period=month&units=international_system&left_color=black&right_color=orange&left_text=Downloads/month)](https://pepy.tech/project/secret-vault)
 A secret file storage vault in python with AES encryption support. 
+
 
 [![Support me!](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maneeshpradeep)
 
